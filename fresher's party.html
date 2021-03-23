@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<title>Fresher's party</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+<style>
+body,h1,h2{font-family: 'Bebas Neue'; color: white; }
+body, html {height: 100%; background-color: #111111}
+
+p {line-height: 2;
+font-family: 'Raleway', sans-serif;
+font-style: : normal;}
+
+
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: url("/C:/Users/admin/Desktop/web design 2/image/party3.jpg")}
+.bgimg2 {background-image: url("/C:/Users/admin/Desktop/web design 2/image/poly.jpg")}
+
+
+a{
+	font-size: 15px
+}
+
+.wedding{
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+</style>
+
+
+
+
+
+<body>
+
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">FRESHER'S PARTY</h1>
+    
+    <h2><b>28.09.2022</b></h2>
+  </div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min ">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Home</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Event</a>
+    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Information</a>
+    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Submit</a>
+  </div>
+</div>
+
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 bgimg2 w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-white" style="font-size: 40px; letter-spacing: 4px"><b>One of the biggest events at the campus</b></h1>
+    <img class="w3-round w3-grayscale-min" src="/C:/Users/admin/Desktop/web design 2/image/party.jpg" style="width:100%;margin:32px 0">
+
+    <p><i>Don't miss out the best moment of your time here!	Make new friends, get to know your new home and just have a good time here. We'll have lots of games, dancing and foods, make sure to bring anyone you know with you for the best experience. Our seniors will have a few words for the celebration, with some tips to "survive" at classes, stuff that only we students get to know. For real though, it costs nothing so let's go and have fun!</i>
+    </p><br>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Details</a></p>
+  </div>
+</div>
+
+<!-- Background photo -->
+
+
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64  w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-white"><b>INFORMATION</b></h1>
+    <br>
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>TIME</h2>
+        <p>Alpha lobby - 9:30pm</p>
+        <p>Football field - 10:30pm</p>
+        <p>Alpha's front yard - 12pm</p>
+      </div>
+      <div class="w3-half">
+        <h2>ACTIVITIES</h2>
+        <p>Gathering and informing</p>
+        <p>Practice flashmob</p>
+        <p>Party and concert</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-light-grey w3-center w3-wide" id="rsvp">
+  <h1 class="w3-text-black"><b>C'MON, CLICK THE RED BUTTON</b>
+  </h1>
+  <p class="w3-large">Make sure to submit by 29.09.2022</p>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+  </p>
+</div>
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">CAN YOU COME?</h1>
+      <p>We really hope you can make it.</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+        <br>
+
+         <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+      </form>
+
+      <br> 
+
+      <div class="w3-row">
+        <div class="w3-half">
+          <button  onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green style" style= "margin-right: 10px ">Heck yeah!</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">On a second thought</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+
+  
+
+
+</body>
+</html>
+
+
